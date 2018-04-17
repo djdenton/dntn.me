@@ -17,9 +17,11 @@ dictation.on('value', function(snapshot) {
   document.getElementById('receiver').innerHTML = snapshot.val();                   
 });
 
+window.onload=function(){
 // Update Document
 var device = document.getElementById('device');
 
 device.addEventListener('input', function() {
     dictation.set(device.innerHTML);
 });
+}
