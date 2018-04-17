@@ -1,0 +1,41 @@
+/*Menu Styling */
+  	
+.navbar-inverse	{
+	background-image: url(../images/nav_bground.gif);
+	background-repeat: repeat-x;
+	padding: 3px 0 0;
+}
+
+.navbar-inverse .container {
+	background: url(../images/bg02.gif) no-repeat left 5px;
+	padding: 0 0 0 1px;
+	height: 35px;
+}
+
+.navbar-nav  li{
+    float: left;	
+	display: inline;
+	list-style-type: none;
+	background: url("../images/bg02.gif") no-repeat right 5px;
+    padding: 0 1px 0 0;
+	margin: 0px;
+}
+
+.navbar-nav  li a {
+    color: #666 !important;
+    display: block;
+    font-size: 13px;
+	line-height:35px;
+    text-align: center;
+	margin: 0px;
+	padding: 0px 28px;
+}
+.navbar-nav  li a:hover {
+	color: #333 !important;
+}
+.navbar-nav  li .active {
+	color: #EF4135 !important;
+}
+.navbar-nav li .active:hover {
+	color: #EF4135 !important;
+}

@@ -1,0 +1,5 @@
+[contenteditable="true"] { 
+  padding: 10px; 
+  outline: 2px dashed grey; }
+[contenteditable="true"]:hover {
+  outline: 2px dashed green; }

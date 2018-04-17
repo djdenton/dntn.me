@@ -1,0 +1,71 @@
+/*Typography - Not including Tabs / Main Navigation*/
+body{font-family: Arial, Helvetica, sans-serif;font-size:13px;line-height:16px;color:#666;}
+/*a{color:#666;}*/
+
+p {
+	Margin-bottom: 10px;
+	font-size: 1.6em;
+	line-height: 1.4em;
+}
+b {
+	font-weight: bold;
+}
+i {
+	font-style: italic;
+}
+.indent {
+	margin-left: 15px;
+}
+
+/*Links*/
+a {
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	/*color: #666;*/
+}
+
+.format a {
+	color: #569BBE;
+}
+
+/*Lists*/
+.format  ul{
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.format li {
+	padding-left: 15px;
+	margin-bottom: 15px;
+    display: block;
+	font-size: 1.5em;
+    background: url("../images/nav_li_red_normal.gif") left 5px no-repeat;
+}
+
+/*Headers*/
+h1{
+	font-size: 3em;
+	font-weight: 600;
+	margin-bottom: 20px;
+	display: block;
+}
+
+h2{
+	font-size: 2em;
+	color: #EF4135;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+ 
+ h3{
+	color: #666;
+	font-size: 2.2em;
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+/* Buttons */
+
+a.button{
+	color: #666;
+}

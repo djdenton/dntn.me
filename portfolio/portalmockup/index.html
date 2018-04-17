@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Lubbock Fine Portal | Home</title>
+	<link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/LFtemplate.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/typography.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+	<div class="header">	
+		<div class="container">
+				<a href="index.html">
+					<img src="images/lubbock_fine_logo.gif" height="68px" width="241px"/>
+				</a>
+				<img src="images/BlankUserAvatar.Png" height="64px" width="64px" class="avatar pull-right"/>
+				<h3 class="avatar-name pull-right">John Doe</h3>		
+		</div> <!-- /.Container -->
+	</div> <!-- /. Header -->
+	<div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+		<!--Main Navigation -->
+		<ul class="nav navbar-nav">
+			<li><a title="" class="active" href="#">Home</a></li>
+			<li><a title="New View of all contacts associated with user" class="tttop" href="contacts.html">Contacts</a></li>		
+			<li><a href="#Profile">Profile</a></li>
+			<li><a href="#Logout">Logout</a></li>				
+		</ul>  
+
+	  </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="col-xs-12 col-sm-9">
+         <ul class="breadcrumb">
+			  <li class="active"><a href="#">Home</a></li>
+		  </ul>
+		<div class="jumbotron tttop" title="Could potentially be a note">
+            <h1>Welcome to the Portal</h1>
+			<ul>
+				<li>A welcome to the portal when users first log in</li>
+				<li>Messages and Updates to clients display here.</li>
+			</ul>
+		</div>
+		<div class="page-header">
+			<h1>Client Spaces</h1>
+		</div>
+			<div class="row">
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<span class="bubble">8</span>
+				  <img src="images/holder.png" alt="...">
+				  <div class="caption">
+					<h3>ABC Motors Ltd</h3>
+					<p>23 item(s)</p>
+					<p>20.3 MB </p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<span class="bubble">5</span>
+				  <img src="images/holder.png" alt="...">
+				  <div class="caption">
+					<h3>ABC Scrap Ltd</h3>
+					<p>12 item(s)</p>
+					<p>15.0 MB </p>					
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6 col-md-4">
+				<div class="thumbnail">
+				<span class="bubble">2</span>
+				  <img src="images/holder.png" alt="...">
+				  <div class="caption">
+					<h3>John Doe</h3>
+					<p>2 item(s)</p>
+					<p>0.5 MB </p>
+				  </div>
+				</div>
+			  </div>
+
+			</div>
+        </div><!--/span-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+			<div class="input-group">
+			  <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+			  <input type="text" class="form-control" placeholder="Search the Portal">
+			</div>
+		<div class="thumbnail contact tttop" title="Key Contact for User">	
+			<div>
+				<div class="caption pull-right mjt">
+					<h3>Mark Turner</h3>
+					<h4>Managing Partner</h4>
+				</div>
+			<img src="images/markturner.jpg" height="70px" width="70px" alt="...">
+			</div>
+			<div class="icons">
+				<span class="glyphicon glyphicon-envelope ttbottom" title="markturner@Lubbockfine.co.uk"></span>
+				<span class="glyphicon glyphicon-phone ttbottom" title="01288 355574"></span>				
+				<span class="glyphicon glyphicon-download-alt ttbottom" title="Download V-Card"></span>
+				<span class="linked-in ttbottom" title="Linked In">in</span>					
+			</div>
+		</div>
+		<div >
+			<ul class="nav nav-pills nav-stacked tttop" title="Amalgamation of key notifications">
+				<li><a href="#">New Documents <span class="badge pull-right">5</span></a></li>
+				<li><a href="#">New Comments <span class="badge pull-right">2</span></a></li>
+				<li><a href="#">Approval Required <span class="badge pull-right">3</span></a></li>
+			</ul>
+		</div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+      </footer>
+
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+	<script src="assets/js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/offcanvas.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".tttop").tooltip({placement: 'top'});
+		$(".ttright").tooltip({placement: 'right'});
+		$(".ttbottom").tooltip({placement: 'bottom'});
+	});
+</script>
+  </body>
+</html>
