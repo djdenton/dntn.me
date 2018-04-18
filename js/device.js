@@ -14,6 +14,12 @@ var dictation = firebase.database().ref('/Dictation');
 dictation.child('ActiveSection').set('');
 dictation.child('NewParagraph').set(false);
 
+// Function to clear Div
+function clear(div){
+  while (div.firstChild) div.removeChild(div.firstChild);
+};
+
+
 window.onload=function(){
 
   // Define sections
@@ -29,21 +35,23 @@ window.onload=function(){
     if(snapshot.val().NewParagraph){
       main.innerHTML = main.innerHTML + snapshot.val().ActiveSection; //Only needed on web version
       dictation.child('NewParagraph').set(false); //Reset the new para
-    };
+    }else{
     activeSection.innerHTML = snapshot.val().ActiveSection;
     update.innerHTML = snapshot.val().ActiveSection;
+    };
   });
 
   // Update Document
-  device.addEventListener('input', function() {
+  device.addEventListener('keyup', function() {
     // If there is a new paragraph
     if(activeSection.innerHTML.includes('<div><br></div>')){
       dictation.child('ActiveSection').set(device.innerHTML);
       dictation.child('NewParagraph').set(true);
-      device.innerHTML = '';
-      activeSection.innerHTML = '';
+      clear(device);
+      clear(activeSection);
     }else{
       dictation.child('ActiveSection').set(device.innerHTML);
     };
   });
 }
+
